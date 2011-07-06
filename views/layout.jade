@@ -1,0 +1,77 @@
+!!!
+html
+  head
+    title= 'ZZooN message board'
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/aristo/jquery-ui-1.8.5.custom.css')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js')
+  body
+    #container
+      div(class='accordion')
+        h3
+          a(href='#')
+            div First
+              label#content_title 고현준
+              label#content_date 2011/10/14
+              label#content_hit 12
+        div First Article
+        h3
+          a(href='#')
+            div First
+              label#content_title 고현준
+              label#content_date 2011/10/14
+              label#content_hit 12
+        div First Article
+        h3
+          a(href='#')
+            div First
+              label#content_title 고현준
+              label#content_date 2011/10/14
+              label#content_hit 12
+        div First Article
+        h3
+          a(href='#')
+            div First
+              label#content_title 고현준
+              label#content_date 2011/10/14
+              label#content_hit 12
+        div First Article
+        h3
+          a(href='#')
+            div First
+              label#content_title 고현준
+              label#content_date 2011/10/14
+              label#content_hit 12
+        div First Article
+      br
+      #button_box
+        button#write_button write button
+        button#next_button next button
+        button#prev_button prev button
+      #write_dialog(title='New Message')
+        table
+          tr
+            td
+              label(for='title') Title
+            td
+              input#title(name='title')
+          tr
+            td
+              label(for='author') Author
+            td
+              input#author(name='author')
+          tr
+            td
+              label(for='password') Password
+            td
+              input#password(type='password', name='password')
+          tr
+            td
+              label(for='content') Content
+            td
+              textarea#content(name='content', cols='40',rows='30')
+  != body
+
+  script(type='text/javascript', src='/javascripts/front-end.js')
+
